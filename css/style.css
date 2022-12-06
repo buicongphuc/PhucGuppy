@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.strikethrough{
+    border-top:1px solid gray ;
+}
+
+#banner{
+
+    min-height: 80px;
+    width: 100%;
+}
+
+
+body{
+    background-image: url(../images/background.png);
+    background-size: cover;
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   /* border: 1px solid gray; */
+    padding: 10px 0px;
+    display: block
+}
+
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+}
+
+ul#main-menu{
+    display: flex;
+}
+
+ul#main-menu a{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: aliceblue;
+    display: block;
+}
+ .container{
+    max-width: 960px;
+    margin: 0px auto;
+} 
+
+/* #header{
+    background-color: black;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+/* .logo{
+    max-width: 50px;
+    height: auto;
+    color: #ff7200;
+    font-family: Arial;
+    padding-left: 20px;
+
+    padding-top: 10px;
+} */
+
+/* .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+} */
+
+#main-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu li{
+    position: relative;
+}
+
+#main-menu li a{
+    color: white;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: rgb(7, 7, 7);
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid rgb(114, 107, 107);
+    display: none; /*ẩn sub-menu*/
+}
+
+#main-menu li:hover>ul.sub-menu{ /*xuất hiện lại sub-menu khi hover chuột*/
+    display: block;
+}
+
+#main-menu ul.sub-menu a{
+    left: 0;
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(114, 107, 107);
+}
+
+#main-menu ul.sub-menu li:hover>a{
+    border-bottom: 1px solid rgb(83, 80, 80);
+}
+
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 200px;
+    top: -15px;
+}
+
+/*Thiết lập border khi hover*/
+#main-menu>li>a{
+    position: relative;
+}
+
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: rebeccapurple;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+#main-menu>li:hover>a::before{
+    display: block;
+    width: 100%;
+}
+
+#main-menu>li.has-child::after{
+    
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f107"; 
+    color: rgb(74, 89, 104);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 18px 0px;
+}
+
+#main-menu .sub-menu li:hover>a{
+    color: #ff7200;
+}
+
+#main-menu .sub-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105"; 
+    color: rgb(74, 89, 104);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 0px;
+}
+
+#main-menu .sub-menu>li.has-child:hover::after{
+    color: #ff7200;
+}
+
+.strikethrough{
+    width: 100%;
+    height: 80px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+ 
+.search{
+
+    width: 400px;
+    float: right;
+    margin-right: 10px;
+  
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding-left: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:hover{
+    color: beige;
+    background-color: brown;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.cart-icon{
+    color: white;
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cart-icon:hover{
+    color: red;
+}

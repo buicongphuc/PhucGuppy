@@ -1,0 +1,61 @@
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cart h2{
+    margin-bottom: 20px;
+}
+
+.cart table{
+    width: 100%;
+}
+
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+
+.cart table tr td{
+    border-bottom: 1px solid black;
+    padding: 12px 0;
+}
+
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    left: 0;
+    top: 0;
+    background-color: rgb(252, 245, 227);
+    padding: 12px 20px;
+    overflow-y: scroll;
+    left: -100%;
+}
+
+.cart i{
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: red;
+}
+
+.buy{
+    color: white;
+    margin-top: 12px;
+    height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(16, 12, 248);
+}
