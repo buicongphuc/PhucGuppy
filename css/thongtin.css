@@ -42,3 +42,17 @@
     font-size: 30px;
     color: aliceblue;
 }
+.trangcanhan .thongtin ul li>.update{
+    height: 100px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(194, 11, 11);
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.trangcanhan .thongtin ul li>.update:hover{
+    background-color: rgb(241, 6, 6);
+    color: white;
+}
